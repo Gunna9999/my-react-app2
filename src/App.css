@@ -1,38 +1,123 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: bisque;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: bisque;
+  width: 350px;
+  padding: .7rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 1px 4px 0px  rgb(39, 34, 34);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-icon {
+  width: 25px;
+  position: absolute;
+  left: 62%;
+  top: 18.5%;
+  cursor: pointer;
+}
+
+.container {
   display: flex;
   flex-direction: column;
+  flex-flow: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.movie {
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.img {
+  border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 260px;
+}
+
+span {
+  text-transform: capitalize;
+}
+
+.title {
+  text-align: start;
+  background-color: rgb(52, 47, 47);
+  padding: 1rem;
+  width: 230px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  word-break: break-all;
+    word-wrap: break-word;
+
+}
+
+.empty {
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+  input {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-color: black;
+      color: bisque;
+      width: 220px;
+      padding: .7rem 1rem;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 1px 4px 0px rgb(39, 34, 34);
+    }
+
+        .search-icon {
+          width: 25px;
+          position: absolute;
+          left: 68.5%;
+          top: 11.2%;
+          cursor: pointer;
+        }
+  
+}
+
+
+@media screen and (max-width:680px) {
+
+  input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: bisque;
+    width: 220px;
+    padding: .7rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 0px rgb(39, 34, 34);
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-icon {
+    width: 25px;
+    position: absolute;
+    left: 68.5%;
+    top: 11.3%;
+    cursor: pointer;
   }
+
 }
